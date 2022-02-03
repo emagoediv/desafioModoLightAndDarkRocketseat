@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: azure;
+    transition: 1s;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.container .label {
+    border-radius: 30px;
+    background-image: url("/assets/images/label.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container .label > div {
+    margin: -3px;
+    margin-top:2px;
+    padding: 0;
+}
+
+.container .label .moon {
+    margin-left: 5px;
+}
+
+.container .label .sun {
+    margin-left: 30px;
+}
+
+
+.container .label .ball {
+    margin-right: 65px;
+    z-index: 1;
+    position: absolute;
+    transition: 1s;
+}
+
+
+.container .label .ball-right.ball {
+    margin-right: -68px;
+    z-index: 1;
+    position: absolute;
+    transition: 1s;
+}
