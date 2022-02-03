@@ -13,3 +13,15 @@ ball.addEventListener('click', () => {
         left = true
     }
 })
+
+ball.addEventListener('touchstart', () => {
+    if(left == true){
+    divBall.classList.add("ball-right")
+    body.style.backgroundColor = "#444"
+    left = false
+    }else if(left == false){
+        divBall.classList.remove("ball-right")
+        body.style.backgroundColor = "#eee"
+        left = true
+    }
+})
