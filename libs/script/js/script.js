@@ -9,7 +9,7 @@ ball.addEventListener('click', () => {
     left = false
     }else if(left == false){
         divBall.classList.remove("ball-right")
-        body.style.backgroundColor = "#eee"
+        body.style.backgroundColor = "#ccc"
         left = true
     }
 })
@@ -21,7 +21,7 @@ ball.addEventListener('touchstart', () => {
     left = false
     }else if(left == false){
         divBall.classList.remove("ball-right")
-        body.style.backgroundColor = "#eee"
+        body.style.backgroundColor = "#ccc"
         left = true
     }
 })
